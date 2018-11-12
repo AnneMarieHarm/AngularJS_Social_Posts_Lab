@@ -5,12 +5,15 @@ angular
 
 //define component
 
-const post = {
-    template: ``,
+const socialPosts = {
+    template: `
+    <form ng-submit="$ctrl.edit($ctrl.socialPosts);">
+    <p>text</p>
+    `,
     controller: [function() {
     }]
 };
 
 angular
     .module("App")
-    .component("post", post);
+    .component("socialPosts", socialPosts);
